@@ -30,6 +30,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
+# TWRP
+PRODUCT_COPY_FILES += \
+    device/samsung/n5110/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # Include common makefile
 $(call inherit-product, device/samsung/kona-common/kona-common.mk)
 
